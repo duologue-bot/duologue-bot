@@ -1,0 +1,61 @@
+{
+  "name": "duologue",
+  "description": "Chatbot to help with uncomfortable silences",
+  "version": "1.0.0",
+  "license": "MIT",
+  "main": "server.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/duologue-bot/duologue-bot.git"
+  },
+  "now": {
+    "alias": "www.lizziesnoggin.com",
+    "env": {
+      "NODE_ENV": "production"
+    }
+  },
+  "config": {
+    "port": "8572"
+  },
+  "scripts": {
+    "test": "mocha ./test",
+    "start": "node server.js",
+    "debug": "nodemon -e js,hbs --watch src/ --exec node debug server.js",
+    "dev": "nodemon -e js,hbs --watch src/ --exec npm run start",
+    "prepush": "npm run test",
+    "tunnel": "ngrok start career-profile-bot -config ./.ngrok"
+  },
+  "dependencies": {
+    "axios": "^0.16.2",
+    "babel-preset-es2017": "^1.6.1",
+    "babel-register": "^6.11.6",
+    "base64url": "^2.0.0",
+    "body-parser": "^1.17.1",
+    "change-case": "^3.0.1",
+    "conflab": "^0.0.14",
+    "cookie-parser": "^1.4.3",
+    "csv": "^1.1.1",
+    "electrician": "^1.0.5",
+    "express": "^4.15.2",
+    "ramda": "^0.23.0",
+    "request": "^2.81.0",
+    "request-promise-native": "^1.0.3",
+    "serve-static": "^1.12.2",
+    "state-machine": "^1.0.1"
+  },
+  "devDependencies": {
+    "apidoc": "^0.16.1",
+    "babel-eslint": "^6.1.2",
+    "env-test": "^1.0.0",
+    "eslint": "^3.17.1",
+    "eslint-config-airbnb-base": "^11.1.3",
+    "eslint-plugin-import": "^2.2.0",
+    "eslint-plugin-mocha": "^4.3.0",
+    "expect.js": "^0.3.1",
+    "http-status-codes": "^1.0.6",
+    "husky": "^0.11.6",
+    "mocha": "^3.0.1",
+    "supertest": "^2.0.0",
+    "supertest-as-promised": "^3.2.0"
+  }
+}

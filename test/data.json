@@ -1,0 +1,204 @@
+{
+  "questionCount": 49,
+  "stateQuestions": {
+    "sayCloseFriendsBegin": [
+      "How've you been? What have you been up to?",
+      "Tell me EVERYTHING.",
+      "What's going on in your life?",
+      "Hey, how have you been? What have you been up to?",
+      "Have you had a busy week? What have you been up to?"
+    ],
+    "sayAcquaintancesBegin": [
+      "How've you been? What have you been up to?",
+      "What's going on in your life?",
+      "Hey, how have you been? What have you been up to?",
+      "I've seen you at one of these events before, haven't I?",
+      "Have you tried any of the food yet? What do you recommend?",
+      "Tell me about you.",
+      "What's your story?",
+      "What brings you here tonight?",
+      "Have you been to an event like this before?",
+      "Those are really charming glasses.  Where did you get them?",
+      "How do you know the host?",
+      "Research has found that the most effective conversation starter is a simple, “Hello, how are you?” It’s super easy, but it works!"
+    ],
+    "sayCloseFriendsMiddle": [
+      "What was your dream job as a kid? What about that is reflected in your life now?",
+      "What's your favourite passion project at the moment?",
+      "By this time next year, what do you want to look back and remember doing?",
+      "Have you got any holiday time planned?",
+      "Have you tried any of the food yet? What do you recommend?",
+      "Have you had a busy week? What have you been up to?",
+      "Do you know anybody else here?",
+      "Tell me about you.",
+      "What brings you here tonight?",
+      "How do you know the host?",
+      "What's your most exciting passion project right now?",
+      "Would you rather go without your smartphone or without beer for a month?",
+      "What one object would you rescue from your house if aliens invaded? Why?",
+      "If someone adapted your life into a movie, who would star in it? Who would direct it? Why?",
+      "If you could choose anyone in the world living or dead, who would you want as a dinner guest?",
+      "Would you like to be famous? For what?",
+      "When did you last sing to yourself? To someone else?",
+      "If you lived to be 90 years old, would you rather have the mind or the body of a 30 year old for the last 60 years of your life? Why?",
+      "If you could die in the most spectacular way possible, what would that be?",
+      "What are you most  grateful for in life?",
+      "If you could wake up tomorrow with one superpower, what would you choose?",
+      "If you could be of the opposite gender for a day, what's the first thing you would do?",
+      "If you had a crystal ball that really worked, what would you want to find out?",
+      "What's a secret dream or goal that you've never told anyone?",
+      "What's your most treasured memory?",
+      "If you knew you had exactly one year left to live, what would you change about your life?"
+    ],
+    "sayPanic": [
+      "What was your dream job as a kid? What about that is reflected in your life now?",
+      "By this time next year, what do you want to look back and remember doing?",
+      "What are you up to this weekend?",
+      "Have you got any holiday time planned?",
+      "How's your week looking? Busy?",
+      "What's your most exciting passion project right now?",
+      "Would you rather go without your smartphone or without beer for a month?",
+      "What's the largest animal you think you could defeat in a fight with your bare hands?",
+      "If you had a million dollars but you couldn't spend it on yourself, what would you do with it?",
+      "What one object would you rescue from your house if aliens invaded? Why?",
+      "If someone adapted your life into a movie, who would star in it? Who would direct it? Why?",
+      "If you could choose anyone in the world living or dead, who would you want as a dinner guest?",
+      "Would you like to be famous? For what?",
+      "Before having a conversation with someone do you ever rehearse what you're going to say? Why?",
+      "When did you last sing to yourself? To someone else?",
+      "If you lived to be 90 years old, would you rather have the mind or the body of a 30 year old for the last 60 years of your life? Why?",
+      "If you could die in the most spectacular way possible, what would that be?",
+      "What are you most  grateful for in life?",
+      "If you could wake up tomorrow with one superpower, what would you choose?",
+      "If you could be of the opposite gender for a day, what's the first thing you would do?",
+      "If you had a crystal ball that really worked, what would you want to find out?",
+      "What's a secret dream or goal that you've never told anyone?",
+      "What's your most treasured memory?",
+      "If you knew you had exactly one year left to live, what would you change about your life?"
+    ],
+    "sayAcquaintancesMiddle": [
+      "What's your favourite passion project at the moment?",
+      "Have you got any holiday time planned?",
+      "I've seen you at one of these events before, haven't I?",
+      "Did you have to come far to get here? What's your area like?",
+      "Have you tried any of the food yet? What do you recommend?",
+      "Have you had a busy week? What have you been up to?",
+      "Do you know anybody else here?",
+      "Have you been to an event like this before?",
+      "I remember you mentioning earlier how much you like sailing.  How did you get interested in that?",
+      "Those are really charming glasses.  Where did you get them?",
+      "How do you know the host?",
+      "What's your most exciting passion project right now?",
+      "Is this a busy time for you? What are you working on?",
+      "What's your favourite place to eat around here?"
+    ],
+    "sayStrangersMiddle": [
+      "What's your favourite passion project at the moment?",
+      "Did you have to come far to get here? What's your area like?",
+      "Have you tried any of the food yet? What do you recommend?",
+      "Have you had a busy week? What have you been up to?",
+      "Do you know anybody else here?",
+      "Have you been to an event like this before?",
+      "I remember you mentioning earlier how much you like sailing.  How did you get interested in that?",
+      "Those are really charming glasses.  Where did you get them?",
+      "How do you know the host?",
+      "What's your most exciting passion project right now?",
+      "Is this a busy time for you? What are you working on?",
+      "What's your favourite place to eat around here?"
+    ],
+    "sayCloseFriendsEnd": [
+      "What are you up to this weekend?",
+      "Have you got any holiday time planned?",
+      "How's your week looking? Busy?",
+      "I think we're supposed to mingle, it's been really nice seeing you again.",
+      "I see a friend/colleague I'd like to catch up with, I hope we'll run into each other again later!",
+      "It's been great catching up with you, I'm going to say hello to a few more people."
+    ],
+    "sayAcquaintancesEnd": [
+      "What are you up to this weekend?",
+      "Have you got any holiday time planned?",
+      "How's your week looking? Busy?",
+      "I think we're supposed to mingle, it's been really nice seeing you again.",
+      "I see a friend/colleague I'd like to catch up with, I hope we'll run into each other again later!",
+      "It's been great catching up with you, I'm going to say hello to a few more people.",
+      "I'm going to get a drink refill--it's been nice meeting you!"
+    ],
+    "sayStrangersEnd": [
+      "What are you up to this weekend?",
+      "Have you got any holiday time planned?",
+      "Have you got any holiday time planned?",
+      "I see a friend/colleague I'd like to catch up with, I hope we'll run into each other again later!",
+      "It's been great catching up with you, I'm going to say hello to a few more people.",
+      "I'm going to get a drink refill--it's been nice meeting you!",
+      "I'm so glad we met. Until next time! Bye!"
+    ],
+    "sayStrangersBegin": [
+      "Have you tried any of the food yet? What do you recommend?",
+      "Tell me about you.",
+      "What's your story?",
+      "What brings you here tonight?",
+      "Have you been to an event like this before?",
+      "Those are really charming glasses.  Where did you get them?",
+      "How do you know the host?",
+      "Research has found that the most effective conversation starter is a simple, “Hello, how are you?” It’s super easy, but it works!"
+    ]
+  },
+  "tips": [
+    {
+      "type": "tip",
+      "id": "1",
+      "text": "Eyebrows are an indicator of interest. If someone raises their eyebrows and smiles or leans in, bookmark that subject as something they enjoy talking about.",
+      "states": ""
+    },
+    {
+      "type": "tip",
+      "id": "2",
+      "text": "To wrap up, use nonverbal distancing signals like pointing your feet towards the door or the food. Your partner will subtly sense you want to leave and change gear to wind down.",
+      "states": ""
+    },
+    {
+      "type": "tip",
+      "id": "3",
+      "text": "Context is key. If you're really stuck, look to your surroundings for inspiration: the food, the decor, the route you took to get there, your partner's outfit.",
+      "states": ""
+    },
+    {
+      "type": "tip",
+      "id": "4",
+      "text": "Use an open stance to put people at ease.  Head up, shoulders back and relaxed, palms visible, eye contact.",
+      "states": ""
+    },
+    {
+      "type": "tip",
+      "id": "5",
+      "text": "Social questions often go in groups of two or three: \"How was it?\" \"Did you have a good time?\" \"Did you enjoy the food?\"",
+      "states": ""
+    }
+  ],
+  "thanks": [
+    {
+      "type": "thanks",
+      "id": "1",
+      "text": "You're welcome! Call on me any time for more tips.",
+      "states": "sayThanks"
+    },
+    {
+      "type": "thanks",
+      "id": "2",
+      "text": "My pleasure, I'm so glad I could help you today! Come back any time.",
+      "states": "sayThanks"
+    },
+    {
+      "type": "thanks",
+      "id": "3",
+      "text": "Your wish is my command! Always happy to serve. I'll be right here when you need me.",
+      "states": "sayThanks"
+    },
+    {
+      "type": "thanks",
+      "id": "4",
+      "text": "No worries, glad I could help. See you next time!",
+      "states": ""
+    }
+  ]
+}
