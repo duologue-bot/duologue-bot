@@ -1,13 +1,6 @@
-# lizziesnoggin
+# Duologue Bot
 
-A private place for ideas to come to life.
-
-Code in this repository makes things happen here:
-
-https://www.lizziesnoggin.com
-
-Bot: https://www.facebook.com/messages/t/1072414536220500
-
+https://www.facebook.com/Duologue-2165944153632193/ 
 
 ## Getting Started
 
@@ -16,8 +9,8 @@ Bot: https://www.facebook.com/messages/t/1072414536220500
 ```
 nvm install 7
 nvm alias default 7
-git clone git@github.com:cliftonc/lizziesnoggin.git
-cd lizziesnoggin
+git clone git@github.com:duologue-bot/duologue-bot.git
+cd duologue-bot
 npm i -g yarn nodemon now
 yarn install
 ```
@@ -27,14 +20,14 @@ yarn install
 In tab 1:
 
 ```
-cd lizziesnoggin
+cd duologue-bot
 npm run dev
 ```
 
 In tab 2:
 
 ```
-cd lizziesnoggin
+cd duologue-bot
 ngrok http --hostname caitlin-bot.eu.ngrok.io --region eu 8572
 ```
 
@@ -73,14 +66,9 @@ Talk to it :)
 
 Live bot lives here: https://www.facebook.com/Duologue-2165944153632193/ 
 
-
-### See the glorious output of your work
-* https://www.lizziesnoggin.com/api/state
-* https://www.lizziesnoggin.com/api/configuration
-
 ### Adjusting your state machine
 
-`state-definition` is the events that point each state to each other.  Each event needs a `name`, a `from` and a `to`.  Your `state-messages` hold the definitions for each state.
+`state-definition` is the events that point each state to each other.  Each event needs an `event`, a `from` and a `to`.  Your `state-messages` hold the definitions for each state.
 
 So from a user's point of view interacting with the bot, typing, "Help, I don't understand what this is!" will cause the action `help` in `state-definitions`, leading to the state `showHelp` in `state-messages`.
 
