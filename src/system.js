@@ -17,6 +17,11 @@ const createApp = (config, data) => {
   const textParserConfig = (config.express && config.express.bodyParser && config.express.bodyParser.text) || { };
   app.use(bodyParser.text(textParserConfig));
   app.use(cookieParser());
+
+  // Prefer environment variables over default ones
+  config.facebook.verifyToken = process.env.VERIFY_TOKEN ? process.env.VERIFY_TOKEN : config.facebook.verifyToken;
+  config.facebook.pageToken = process.env.PAGE_TOKEN ? process.env.PAGE_TOKEN : config.facebook.pageToken;
+
   routes({app, config, data});
   return app;
 }
