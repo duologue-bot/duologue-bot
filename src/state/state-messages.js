@@ -59,7 +59,7 @@ module.exports = (fbClient, senderPsid, botUserStore, data) => {
       { title: '🔎 What\'s this?', payload: 'help' },
       { title: '⏯ Start!', payload: 'conv start' },
     ];
-    await fbClient.sendTextMessage(senderPsid, `What would you like to do?`, quickReplies);
+    await fbClient.sendTextMessage(senderPsid, `What would you like to do? Pick a card...`, quickReplies);
   };
 
   const sayHelp = async (event, fsm) => {
