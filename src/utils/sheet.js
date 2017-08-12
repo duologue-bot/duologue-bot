@@ -13,6 +13,8 @@ const transform = (sheet, data) => {
   data.stateQuestions = {};
   data.tips = [];
   data.thanks = [];
+  data.robot = [];
+  data.confused = [];
   _.map((row) => {
     if (row.type === 'question') {
       data.questionCount = data.questionCount + 1;
@@ -26,6 +28,12 @@ const transform = (sheet, data) => {
       data.tips.push(row.text);
     }
     if (row.type === 'thanks') {
+      data.thanks.push(row.text);
+    }
+    if (row.type === 'robot') {
+      data.thanks.push(row.text);
+    }
+    if (row.type === 'confused') {
       data.thanks.push(row.text);
     }
   }, sheet);

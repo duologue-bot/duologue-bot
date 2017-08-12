@@ -5,6 +5,8 @@ module.exports = {
     'help: * > sayHelp',
     'start: * > conversationStart',
     'thanks: * > sayThanks',
+    'confused: * > sayConfused',
+    'robot: * > sayRobot',
     'caitlin: * > sayCaitlin',
     'clifton: * > sayClifton',
     'closeFriends: conversationStart > sayCloseFriends',

@@ -3,6 +3,9 @@ module.exports = (fbClient, senderPsid) => (fsm) => (text = '') => {
   console.log(`Received ${text} at state ${fsm.state}`);
   text = text.toLowerCase();
   fbClient.setRead(senderPsid);
+  /**
+   * Help
+   */
   if (text.indexOf('help') >= 0) {
     fsm.do('help');
     return;
@@ -15,16 +18,40 @@ module.exports = (fbClient, senderPsid) => (fsm) => (text = '') => {
     fsm.do('help');
     return;
   }
-  if (text.indexOf('who are you') >= 0) {
-    fsm.do('help');
-    return;
-  }
   if (text.indexOf('thanks') >= 0) {
     fsm.do('thanks');
     return;
   }
   if (text.indexOf('thank you') >= 0) {
     fsm.do('thanks');
+    return;
+  }
+
+  /**
+   * Robot
+   */
+  if (text.indexOf('who are') >= 0) {
+    fsm.do('robot');
+    return;
+  }
+  if (text.indexOf('who is your') >= 0) {
+    fsm.do('robot');
+    return;
+  }
+  if (text.indexOf('are you') >= 0) {
+    fsm.do('robot');
+    return;
+  }
+  if (text.indexOf('do you') >= 0) {
+    fsm.do('robot');
+    return;
+  }
+  if (text.indexOf('sex') >= 0) {
+    fsm.do('robot');
+    return;
+  }
+  if (text.indexOf('bot') >= 0) {
+    fsm.do('robot');
     return;
   }
 
@@ -167,6 +194,9 @@ module.exports = (fbClient, senderPsid) => (fsm) => (text = '') => {
     return;
   }
 
+  /**
+   * Conversation start
+   */
   const shouldConvStart = text.indexOf('start') >= 0 ||
     text.indexOf('conv start') >= 0 ||
     text.indexOf('go') >= 0 ||

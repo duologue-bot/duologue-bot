@@ -9,8 +9,8 @@ module.exports = (fbClient, senderPsid, botUserStore, data) => {
    * Default messages per question set
    */
   const defaultMessages = {
-    greeting: 'Great, you\'re among friends! An ideal time to catch up on updates in their life since you saw them last! Try something like...',
-    more: 'Ok, how about:',
+    greeting: 'Great! Try something like...',
+    more: 'Okay, how about:',
     noMore: 'Sorry - I\'m all out of suggestions!',
     noMoreQuickReplies: [
       { title: '🔁 Start again', payload: 'start' },
@@ -72,6 +72,27 @@ module.exports = (fbClient, senderPsid, botUserStore, data) => {
         To give you the right options, I'm going to ask you a few questions first. Ready?`, quickReplies);
   };
 
+  const sayConfused = async (event, fsm) => {
+
+    const quickReplies = [
+      { title: '🔎 What\'s this?', payload: 'help' },
+      { title: '⏯ Start!', payload: 'conv start' },
+    ];
+    const message = data.confused[Math.floor(Math.random() * data.confused.length)];
+    await fbClient.sendTextMessage(senderPsid, message);
+    await fbClient.sendTextMessage(senderPsid, quickReplies);
+  };
+
+  const sayRobot = async (event, fsm) => {
+    const quickReplies = [
+      { title: '🔎 What\'s this?', payload: 'help' },
+      { title: '⏯ Start!', payload: 'conv start' },
+    ];
+    const message = data.robot[Math.floor(Math.random() * data.robot.length)];
+    await fbClient.sendTextMessage(senderPsid, message);
+    await fbClient.sendTextMessage(senderPsid, quickReplies);
+  };
+
   const sayCaitlin = async (event, fsm) => {
     await fbClient.sendRemoteImage(senderPsid, image=`http://pmdvod.nationalgeographic.com/NG_Video/290/458/161209-feather-star-vin_txtd_stereo_ds1602001-226_640x360_829247555597.jpg`);
   };
@@ -99,7 +120,7 @@ module.exports = (fbClient, senderPsid, botUserStore, data) => {
       { title: '☢ RESCUE ME!!', payload: 'panic' },
       { title: '❓ Submit a question', payload: 'submit' },
     ];
-    await fbClient.sendTextMessage(senderPsid, `Great, let\'s get started. Who are you with?`, quickReplies);
+    await fbClient.sendTextMessage(senderPsid, `Great, let\'s get started. Who are you talking to?`, quickReplies);
   };
 
   const sayCloseFriends = async (event, fsm) => {
@@ -213,6 +234,8 @@ module.exports = (fbClient, senderPsid, botUserStore, data) => {
     sayHelp,
     sayPanic,
     sayThanks,
+    sayConfused,
+    sayRobot,
     sayCaitlin,
     sayClifton,
     conversationStart,
